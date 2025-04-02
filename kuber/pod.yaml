@@ -1,0 +1,10 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: app-pod
+spec:
+  containers:
+  - name: python-app
+    image: ditkarp/python-app:latest
+    ports:
+    - containerPort: 80
